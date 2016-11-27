@@ -1,0 +1,111 @@
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 213, in main
+    gtix[i][j] = wordtoix[y]
+IndexError: index 35 is out of bounds for axis 0 with size 35
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)
+Traceback (most recent call last):
+  File "driver_Mod3_SBM.py", line 426, in <module>
+    main(params)
+  File "driver_Mod3_SBM.py", line 258, in main
+    serializers.save_hdf5('lstm_model %d' % it,lstm)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/chainer/serializers/hdf5.py", line 70, in save_hdf5
+    with h5py.File(filename, 'w') as f:
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 272, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, swmr=swmr)
+  File "/sw/bw/bwpy/0.3.0/python-single/usr/lib/python2.7/site-packages/h5py/_hl/files.py", line 98, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2585)
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/_objects.c:2544)
+  File "h5py/h5f.pyx", line 96, in h5py.h5f.create (/dev/shm/cmaclean/python-single/portage/dev-python/h5py-2.6.0/work/h5py-2.6.0/h5py/h5f.c:1992)
+IOError: Unable to create file (File signature not found)

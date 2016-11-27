@@ -1,0 +1,33 @@
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+/mnt/a/u/training/tra245/project/neuraltalk/imagernn/lstm_generator.py:78: RuntimeWarning: overflow encountered in exp
+  IFOGf[t,:3*d] = 1.0/(1.0+np.exp(-IFOG[t,:3*d])) # sigmoids; these are the gates
+aprun: Apid 51069716: Caught signal Terminated, sending to application

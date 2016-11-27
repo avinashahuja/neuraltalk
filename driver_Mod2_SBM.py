@@ -8,6 +8,8 @@ import socket
 import os
 import sys
 import cPickle as pickle
+from lstm import LSTM
+from chainer import cuda, Function, gradient_check, Variable, optimizers, serializers, utils
 
 from imagernn.data_provider import getDataProvider
 from imagernn.solver import Solver
@@ -114,6 +116,15 @@ def RNNGenCost(batch, model, params, misc):
   out['stats'] = { 'ppl2' : 2 ** (logppl / logppln)}
   return out
 
+def LSTMCost(x, lstm, params, misc):
+  imageFeat = x['image']['feat']
+  wordtoix = misc['wordtoix']
+  wordIdx = [0] + [wordtoix[w] for w in x['sentence']['tokens'] if w in wordtoix]
+  feat0 = np.concatenate((imageFeat, np.zeros(2358)))
+  lstm(feat0)
+  #Ys = lstm()
+  return 0
+
 def main(params):
   batch_size = params['batch_size']
   dataset = params['dataset']
@@ -132,29 +143,36 @@ def main(params):
   misc['wordtoix'], misc['ixtoword'], bias_init_vector = preProBuildWordVocab(dp.iterSentences('train'), word_count_threshold)
 
   # delegate the initialization of the model to the Generator class
-  BatchGenerator = decodeGenerator(params)
-  init_struct = BatchGenerator.init(params, misc)
-  model, misc['update'], misc['regularize'] = (init_struct['model'], init_struct['update'], init_struct['regularize'])
+  #BatchGenerator = decodeGenerator(params)
+  #init_struct = BatchGenerator.init(params, misc)
+  #model, misc['update'], misc['regularize'] = (init_struct['model'], init_struct['update'], init_struct['regularize'])
 
   # force overwrite here. This is a bit of a hack, not happy about it
-  model['bd'] = bias_init_vector.reshape(1, bias_init_vector.size)
+  #model['bd'] = bias_init_vector.reshape(1, bias_init_vector.size)
 
-  print 'model init done.'
-  print 'model has keys: ' + ', '.join(model.keys())
-  print 'updating: ' + ', '.join( '%s [%dx%d]' % (k, model[k].shape[0], model[k].shape[1]) for k in misc['update'])
-  print 'updating: ' + ', '.join( '%s [%dx%d]' % (k, model[k].shape[0], model[k].shape[1]) for k in misc['regularize'])
-  print 'number of learnable parameters total: %d' % (sum(model[k].shape[0] * model[k].shape[1] for k in misc['update']), )
+  #print 'model init done.'
+  #print 'model has keys: ' + ', '.join(model.keys())
+  #print 'updating: ' + ', '.join( '%s [%dx%d]' % (k, model[k].shape[0], model[k].shape[1]) for k in misc['update'])
+  #print 'updating: ' + ', '.join( '%s [%dx%d]' % (k, model[k].shape[0], model[k].shape[1]) for k in misc['regularize'])
+  #print 'number of learnable parameters total: %d' % (sum(model[k].shape[0] * model[k].shape[1] for k in misc['update']), )
 
-  if params.get('init_model_from', ''):
+  #if params.get('init_model_from', ''):
     # load checkpoint
-    checkpoint = pickle.load(open(params['init_model_from'], 'rb'))
-    model = checkpoint['model'] # overwrite the model
+  #  checkpoint = pickle.load(open(params['init_model_from'], 'rb'))
+  #  model = checkpoint['model'] # overwrite the model
 
   # initialize the Solver and the cost function
-  solver = Solver()
-  def costfun(batch, model):
+  #solver = Solver()
+  #def costfun(batch, model):
     # wrap the cost function to abstract some things away from the Solver
-    return RNNGenCost(batch, model, params, misc)
+  #  return RNNGenCost(batch, model, params, misc)
+  word_encoding_size = params.get('word_encoding_size', 128)
+  hidden_size = params.get('hidden_size', 128)
+  output_size = len(misc['ixtoword'])  # these should match though
+  wordtoix = misc['wordtoix']
+
+  lstm = LSTM(hidden_size, output_size)
+  #lstm.to_gpu()
 
   # calculate how many iterations we need
   num_sentences_total = dp.getSplitSize('train', ofwhat = 'sentences')
@@ -170,7 +188,67 @@ def main(params):
   json_worker_status = {}
   json_worker_status['params'] = params
   json_worker_status['history'] = []
+
+  optimizer = optimizers.MomentumSGD(momentum=0.9)
+  optimizer.setup(lstm)
+  optimizer.lr = 0.0005
+
+  max_sentence_length = 35
   for it in xrange(max_iters):
+    if abort: break
+    # fetch a batch of data
+    t0 = time.time()
+    batch = [dp.sampleImageSentencePair() for i in xrange(batch_size)]
+    input_image = np.float32(np.row_stack(x['image']['feat'] for x in batch))
+    gtix = np.zeros((batch_size, max_sentence_length), dtype=np.int32)
+    for i,x in enumerate(batch):
+      for j,y in enumerate(x['sentence']['tokens']):
+        if y in wordtoix:
+          gtix[i][j] = wordtoix[y]
+
+    #print 'batch ready from in %.2fs' % (time.time() - t0)
+
+    ys = np
+    lstm.reset_state()
+    lstm.zerograds()
+
+    input = input_image
+    output = gtix[:,0]
+    #input_image = cuda.to_gpu(input_image)
+    #output = cuda.to_gpu(output)
+    loss = lstm(input_image, False, output)
+    for j in xrange(max_sentence_length):
+      if j <  max_sentence_length - 1:
+        input = gtix[:,j]
+        output = gtix[:,j+1]
+        #input = cuda.to_gpu(input)
+        #output = cuda.to_gpu(output)
+        loss += lstm(input, True, output)
+      else:
+        input = gtix[:, j]
+        output = np.zeros(100, dtype = np.int32)
+        #input = cuda.to_gpu(input)
+        #output = cuda.to_gpu(output)
+        loss += lstm(input, True, output)
+
+    loss.backward()
+    optimizer.update()
+
+    dt = time.time() - t0
+
+    #wordList = [x['sentence']['tokens'] for x in batch]
+    #gtix = [wordtoix[w] for w in x['sentence']['tokens'] if w in wordtoix]
+
+    epoch = it * 1.0 / num_iters_one_epoch
+
+    print '%d/%d batch done in %.3fs. at epoch %.2f. loss cost = %f, ' \
+          % (it, max_iters, dt, epoch, loss.data)
+    #for i in xrange(batch_size):
+    #  loss = costfun(batch[i], lstm, params, misc)
+    #loss.backward()
+    #optimizer.update()
+
+  """for it in xrange(max_iters):
     if abort: break
     t0 = time.time()
     # fetch a batch of data
@@ -260,7 +338,7 @@ def main(params):
           except Exception, e: # todo be more clever here
             print 'tried to write checkpoint into %s but got error: ' % (filepat, )
             print e
-
+  """
 
 if __name__ == "__main__":
 
