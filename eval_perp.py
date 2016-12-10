@@ -39,11 +39,9 @@ def eval_perplexity(split, dp, lstm, max_sentence_length, params, misc, **kwargs
       if GPU_id != -1:
         input = cuda.to_gpu(input, GPU_id)
         output = cuda.to_gpu(output, GPU_id)
-<<<<<<< HEAD
       loss, cur_pred = lstm(input, False, False, True, output)
-=======
-      loss, cur_pred = lstm(input, False, True, output)
->>>>>>> fc1f3aa925f04a6e06517593533ecfdee79c8b9f
+
+#      loss, cur_pred = lstm(input, False, True, output)
       if GPU_id != -1:
           cur_pred.to_cpu()
       pred[:,0,:] = cur_pred.data
@@ -54,14 +52,14 @@ def eval_perplexity(split, dp, lstm, max_sentence_length, params, misc, **kwargs
               if GPU_id != -1:
                   input = cuda.to_gpu(input, GPU_id)
                   output = cuda.to_gpu(output, GPU_id)
-<<<<<<< HEAD
+
               l, cur_pred = lstm(input, True, False, True, output)
 	      if GPU_id != -1:
               	cur_pred.to_cpu()
-=======
-              l, cur_pred = lstm(input, True, True, output)
-              #cur_pred.to_cpu()
->>>>>>> fc1f3aa925f04a6e06517593533ecfdee79c8b9f
+
+              # l, cur_pred = lstm(input, True, True, output)
+              # #cur_pred.to_cpu()
+
               loss += l
               pred[:, j+1, :] = cur_pred.data
           else:
@@ -70,11 +68,10 @@ def eval_perplexity(split, dp, lstm, max_sentence_length, params, misc, **kwargs
               if GPU_id != -1:
                 input = cuda.to_gpu(input, GPU_id)
                 output = cuda.to_gpu(output, GPU_id)
-<<<<<<< HEAD
-              l, out = lstm(input, True, False, True, output)
-=======
-              l, out = lstm(input, True, True, output)
->>>>>>> fc1f3aa925f04a6e06517593533ecfdee79c8b9f
+                l, out = lstm(input, True, False, True, output)
+
+              # l, out = lstm(input, True, True, output)
+
               if GPU_id != -1:
                 cur_pred.to_cpu()
               loss += l
@@ -93,8 +90,5 @@ def eval_perplexity(split, dp, lstm, max_sentence_length, params, misc, **kwargs
 
       ppl2 = 2 ** (logppl / logppln)
       print 'evaluated %d sentences and got perplexity = %f' % (nsent, ppl2)
-<<<<<<< HEAD
+
       return ppl2 # return the perplexity
-=======
-      return ppl2 # return the perplexity
->>>>>>> fc1f3aa925f04a6e06517593533ecfdee79c8b9f
