@@ -1,0 +1,710 @@
+----------------------------------------
+Begin Torque Prologue on nid27641
+at Sat Nov 26 19:08:07 CST 2016
+Job Id:			5802081.bw
+Username:		tra245
+Group:			TRAIN_bacu
+Job name:		neruraltalk_16cores
+Requested resources:	neednodes=1:ppn=16:xk,nodes=1:ppn=16:xk,walltime=40:00:00
+Queue:			normal
+Account:		bacu
+End Torque Prologue:  0.114 elapsed
+----------------------------------------
+
+
+
+
+parsed parameters:
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+}
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+}
+}
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+parsed parameters:
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+parsed parameters:
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+filtered words from 7374 to 2537 in 0.34s
+0/15000 batch done in 6.053s. at epoch 0.00. loss cost = 293.296112, 
+1/15000 batch done in 0.262s. at epoch 0.00. loss cost = 275.893951, 
+2/15000 batch done in 0.258s. at epoch 0.01. loss cost = 246.878235, 
+3/15000 batch done in 0.258s. at epoch 0.01. loss cost = 214.782318, 
+4/15000 batch done in 0.260s. at epoch 0.01. loss cost = 172.555054, 
+5/15000 batch done in 0.258s. at epoch 0.02. loss cost = 131.063614, 
+6/15000 batch done in 0.259s. at epoch 0.02. loss cost = 101.504280, 
+7/15000 batch done in 0.258s. at epoch 0.02. loss cost = 92.065231, 
+8/15000 batch done in 0.259s. at epoch 0.03. loss cost = 91.932861, 
+9/15000 batch done in 0.259s. at epoch 0.03. loss cost = 90.149353, 
+10/15000 batch done in 0.258s. at epoch 0.03. loss cost = 95.707329, 
+11/15000 batch done in 0.260s. at epoch 0.04. loss cost = 93.791740, 
+12/15000 batch done in 0.258s. at epoch 0.04. loss cost = 89.068748, 
+13/15000 batch done in 0.259s. at epoch 0.04. loss cost = 97.943085, 
+14/15000 batch done in 0.258s. at epoch 0.05. loss cost = 89.618073, 
+15/15000 batch done in 0.258s. at epoch 0.05. loss cost = 88.316246, 
+16/15000 batch done in 0.260s. at epoch 0.05. loss cost = 98.222580, 
+17/15000 batch done in 0.258s. at epoch 0.06. loss cost = 90.375603, 
+18/15000 batch done in 0.350s. at epoch 0.06. loss cost = 96.739525, 
+19/15000 batch done in 0.258s. at epoch 0.06. loss cost = 96.276512, 
+20/15000 batch done in 0.259s. at epoch 0.07. loss cost = 87.598709, 
+21/15000 batch done in 0.259s. at epoch 0.07. loss cost = 91.341461, 
+22/15000 batch done in 0.258s. at epoch 0.07. loss cost = 90.821686, 
+23/15000 batch done in 0.259s. at epoch 0.08. loss cost = 90.222633, 
+24/15000 batch done in 0.260s. at epoch 0.08. loss cost = 88.439598, 
+25/15000 batch done in 0.258s. at epoch 0.08. loss cost = 87.169617, 
+26/15000 batch done in 0.260s. at epoch 0.09. loss cost = 89.382133, 
+27/15000 batch done in 0.258s. at epoch 0.09. loss cost = 92.154640, 
+28/15000 batch done in 0.259s. at epoch 0.09. loss cost = 89.524513, 
+29/15000 batch done in 0.258s. at epoch 0.10. loss cost = 92.129234, 
+30/15000 batch done in 0.259s. at epoch 0.10. loss cost = 90.313347, 
+31/15000 batch done in 0.260s. at epoch 0.10. loss cost = 90.594513, 
+32/15000 batch done in 0.258s. at epoch 0.11. loss cost = 92.077850, 
+33/15000 batch done in 0.259s. at epoch 0.11. loss cost = 91.533127, 
+34/15000 batch done in 0.258s. at epoch 0.11. loss cost = 85.587471, 
+35/15000 batch done in 0.259s. at epoch 0.12. loss cost = 95.661270, 
+36/15000 batch done in 0.259s. at epoch 0.12. loss cost = 90.855057, 
+37/15000 batch done in 0.258s. at epoch 0.12. loss cost = 90.014832, 
+38/15000 batch done in 0.351s. at epoch 0.13. loss cost = 84.765770, 
+39/15000 batch done in 0.258s. at epoch 0.13. loss cost = 86.206566, 
+40/15000 batch done in 0.259s. at epoch 0.13. loss cost = 88.612656, 
+41/15000 batch done in 0.259s. at epoch 0.14. loss cost = 93.488510, 
+42/15000 batch done in 0.258s. at epoch 0.14. loss cost = 91.363426, 
+43/15000 batch done in 0.259s. at epoch 0.14. loss cost = 88.978348, 
+44/15000 batch done in 0.258s. at epoch 0.15. loss cost = 91.351852, 
+45/15000 batch done in 0.259s. at epoch 0.15. loss cost = 89.575989, 
+46/15000 batch done in 0.260s. at epoch 0.15. loss cost = 87.341782, 
+47/15000 batch done in 0.258s. at epoch 0.16. loss cost = 87.817734, 
+48/15000 batch done in 0.259s. at epoch 0.16. loss cost = 85.265289, 
+49/15000 batch done in 0.258s. at epoch 0.16. loss cost = 86.230446, 
+50/15000 batch done in 0.259s. at epoch 0.17. loss cost = 87.920303, 
+51/15000 batch done in 0.259s. at epoch 0.17. loss cost = 83.056786, 
+52/15000 batch done in 0.258s. at epoch 0.17. loss cost = 84.318535, 
+53/15000 batch done in 0.260s. at epoch 0.18. loss cost = 93.821182, 
+54/15000 batch done in 0.258s. at epoch 0.18. loss cost = 85.350571, 
+55/15000 batch done in 0.259s. at epoch 0.18. loss cost = 84.589806, 
+56/15000 batch done in 0.258s. at epoch 0.19. loss cost = 86.361420, 
+57/15000 batch done in 0.258s. at epoch 0.19. loss cost = 88.376068, 
+58/15000 batch done in 0.260s. at epoch 0.19. loss cost = 87.135406, 
+59/15000 batch done in 0.258s. at epoch 0.20. loss cost = 82.823059, 
+60/15000 batch done in 0.352s. at epoch 0.20. loss cost = 85.168144, 
+61/15000 batch done in 0.258s. at epoch 0.20. loss cost = 82.328857, 
+62/15000 batch done in 0.258s. at epoch 0.21. loss cost = 88.008179, 
+63/15000 batch done in 0.259s. at epoch 0.21. loss cost = 86.162560, 
+64/15000 batch done in 0.258s. at epoch 0.21. loss cost = 89.814049, 
+65/15000 batch done in 0.259s. at epoch 0.22. loss cost = 82.248383, 
+66/15000 batch done in 0.259s. at epoch 0.22. loss cost = 86.245255, 
+67/15000 batch done in 0.258s. at epoch 0.22. loss cost = 82.573090, 
+68/15000 batch done in 0.259s. at epoch 0.23. loss cost = 78.850105, 
+69/15000 batch done in 0.258s. at epoch 0.23. loss cost = 85.820770, 
+70/15000 batch done in 0.259s. at epoch 0.23. loss cost = 82.895103, 
+71/15000 batch done in 0.258s. at epoch 0.24. loss cost = 85.330315, 
+72/15000 batch done in 0.258s. at epoch 0.24. loss cost = 80.044632, 
+73/15000 batch done in 0.260s. at epoch 0.24. loss cost = 87.005486, 
+74/15000 batch done in 0.258s. at epoch 0.25. loss cost = 78.390739, 
+75/15000 batch done in 0.259s. at epoch 0.25. loss cost = 86.801491, 
+76/15000 batch done in 0.258s. at epoch 0.25. loss cost = 81.960449, 
+77/15000 batch done in 0.259s. at epoch 0.26. loss cost = 80.880966, 
+78/15000 batch done in 0.260s. at epoch 0.26. loss cost = 85.206276, 
+79/15000 batch done in 0.258s. at epoch 0.26. loss cost = 86.033897, 
+80/15000 batch done in 0.352s. at epoch 0.27. loss cost = 80.189468, 
+81/15000 batch done in 0.258s. at epoch 0.27. loss cost = 82.093826, 
+82/15000 batch done in 0.259s. at epoch 0.27. loss cost = 83.726135, 
+83/15000 batch done in 0.259s. at epoch 0.28. loss cost = 85.782364, 
+Application 53310679 exit codes: 1
+Application 53310679 resources: utime ~89s, stime ~78s, Rss ~572000, inblocks ~2366597, outblocks ~4190

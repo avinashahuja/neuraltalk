@@ -1,0 +1,646 @@
+----------------------------------------
+Begin Torque Prologue on nid25260
+at Fri Nov 25 21:30:49 CST 2016
+Job Id:			5801003.bw
+Username:		tra245
+Group:			TRAIN_bacu
+Job name:		neruraltalk_16cores
+Requested resources:	neednodes=1:ppn=16:xk,nodes=1:ppn=16:xk,walltime=40:00:00
+Queue:			normal
+Account:		bacu
+End Torque Prologue:  0.120 elapsed
+----------------------------------------
+
+
+
+
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+parsed parameters:
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+}
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+}
+}
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+parsed parameters:
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+{
+  "grad_clip": 5, 
+  "rnn_relu_encoders": 0, 
+  "dataset": "flickr8k", 
+  "image_encoding_size": 256, 
+  "eval_max_images": -1, 
+  "drop_prob_decoder": 0.5, 
+  "word_encoding_size": 256, 
+  "max_epochs": 50, 
+  "eval_batch_size": 100, 
+  "fappend": "baseline", 
+  "generator": "lstm", 
+  "min_ppl_or_abort": -1, 
+  "tanhC_version": 0, 
+  "write_checkpoint_ppl_threshold": -1, 
+  "decay_rate": 0.999, 
+  "rnn_feed_once": 0, 
+  "hidden_size": 256, 
+  "momentum": 0.0, 
+  "worker_status_output_directory": "status/", 
+  "init_model_from": "", 
+  "learning_rate": 0.001, 
+  "checkpoint_output_directory": "cv/", 
+  "do_grad_check": 0, 
+  "word_count_threshold": 5, 
+  "batch_size": 100, 
+  "regc": 1e-08, 
+  "smooth_eps": 1e-08, 
+  "solver": "rmsprop", 
+  "eval_period": 1.0, 
+  "drop_prob_encoder": 0.5
+}
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/dataset.json
+Initializing data provider for dataset flickr8k...
+BasicDataProvider: reading data/flickr8k/dataset.json
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+BasicDataProvider: reading data/flickr8k/vgg_feats.mat
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+preprocessing word counts and creating vocab based on word count threshold 5
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+filtered words from 7374 to 2537 in 0.35s
+0/20 batch done in 12.453s. at epoch 0.00. loss cost = 302.014099, 
+1/20 batch done in 0.265s. at epoch 0.00. loss cost = 276.533264, 
+2/20 batch done in 0.260s. at epoch 0.01. loss cost = 238.923157, 
+3/20 batch done in 0.260s. at epoch 0.01. loss cost = 199.162582, 
+4/20 batch done in 0.263s. at epoch 0.01. loss cost = 151.885757, 
+5/20 batch done in 0.260s. at epoch 0.02. loss cost = 108.689804, 
+6/20 batch done in 0.261s. at epoch 0.02. loss cost = 96.497284, 
+7/20 batch done in 0.260s. at epoch 0.02. loss cost = 91.409271, 
+8/20 batch done in 0.260s. at epoch 0.03. loss cost = 89.507126, 
+9/20 batch done in 0.261s. at epoch 0.03. loss cost = 87.734810, 
+10/20 batch done in 0.260s. at epoch 0.03. loss cost = 93.518028, 
+11/20 batch done in 0.261s. at epoch 0.04. loss cost = 92.869728, 
+12/20 batch done in 0.260s. at epoch 0.04. loss cost = 92.071846, 
+13/20 batch done in 0.260s. at epoch 0.04. loss cost = 88.478264, 
+14/20 batch done in 0.262s. at epoch 0.05. loss cost = 94.185173, 
+15/20 batch done in 0.260s. at epoch 0.05. loss cost = 88.481049, 
+16/20 batch done in 0.262s. at epoch 0.05. loss cost = 90.478546, 
+17/20 batch done in 0.260s. at epoch 0.06. loss cost = 87.226433, 
+18/20 batch done in 0.261s. at epoch 0.06. loss cost = 95.300598, 
+19/20 batch done in 0.260s. at epoch 0.06. loss cost = 91.152939, 
+Application 52492896 exit codes: 1
+Application 52492896 resources: utime ~79s, stime ~76s, Rss ~572016, inblocks ~2431390, outblocks ~53246

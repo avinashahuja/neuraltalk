@@ -1,0 +1,11 @@
+*.pyc
+cv/*.p
+*.zip
+*.json
+*.swp
+*.model
+*.c
+data/*
+*.p
+numpy/
+caffe/*

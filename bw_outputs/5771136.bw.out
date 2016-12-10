@@ -1,0 +1,16 @@
+----------------------------------------
+Begin Torque Prologue on nid25252
+at Fri Nov 18 03:13:32 CST 2016
+Job Id:			5771136.bw
+Username:		tra245
+Group:			TRAIN_bacu
+Job name:		neruraltalk_1
+Requested resources:	neednodes=1:ppn=16:xk,nodes=1:ppn=16:xk,walltime=40:00:00
+Queue:			normal
+Account:		bacu
+End Torque Prologue:  0.067 elapsed
+----------------------------------------
+
+
+
+
