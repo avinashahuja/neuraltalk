@@ -7,9 +7,15 @@ import chainer.links as L
 import chainer.functions as F
 import numpy as np
 
+<<<<<<< HEAD
 class LSTM(chainer.Chain):
     def __init__(self, hidden_size, output_size):
         #TODO: these should be arguments rather than defined here
+=======
+
+class LSTM(chainer.Chain):
+    def __init__(self, hidden_size, output_size):
+>>>>>>> fc1f3aa925f04a6e06517593533ecfdee79c8b9f
         image_size = 4096
         word_encoding_size = 2538
         super(LSTM, self).__init__(
@@ -22,6 +28,7 @@ class LSTM(chainer.Chain):
     def reset_state(self):
         self.lstm_1.reset_state()
 
+<<<<<<< HEAD
     def __call__(self, cur_word_or_image, if_word, if_train, y):
         # Given the current word ID or image, predict the next word.
         if if_word:
@@ -32,3 +39,19 @@ class LSTM(chainer.Chain):
         h = F.dropout(self.lstm_1(x), train = if_train, ratio = 0.5)
         p = self.out_1(h)
         return F.softmax(p)
+=======
+    def __call__(self, cur_word_or_image, if_word, if_loss_needed, y):
+        # Given the current word ID or image, predict the next word.
+        if if_word:
+            x = self.embed(cur_word_or_image)
+        else:
+            x = self.lin_1(cur_word_or_image)
+        h = self.lstm_1(x)
+        p = self.out_1(h)
+
+        if if_loss_needed:
+            loss = F.softmax_cross_entropy(p, y)
+            return loss, F.softmax(p)
+        else:
+            return F.softmax(p)
+>>>>>>> fc1f3aa925f04a6e06517593533ecfdee79c8b9f

@@ -34,5 +34,6 @@ module load cudatoolkit
 ### NOTE: (the "in" file must exist for input)
 
 aprun -n 16 -N 16 python driver_Mod10_SBM.py
+#aprun -n 16 -N 16 python driver_Mod4_SBM.py
 
 ### For more information see the man page for aprun
