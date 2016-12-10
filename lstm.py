@@ -34,7 +34,7 @@ class LSTM(chainer.Chain):
     #     p = self.out_1(h)
     #     return F.softmax(p)
 
-    def __call__(self, cur_word_or_image, if_word, if_loss_needed, y):
+    def __call__(self, cur_word_or_image, if_word, if_loss_needed,if_train, y):
         # Given the current word ID or image, predict the next word.
         if if_word:
             x = self.embed(cur_word_or_image)
